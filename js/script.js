@@ -3,5 +3,5 @@
 // save button links to corresponding text area
 // saves to local storage
 
-var currentDay = moment().format("dddd MMMM Do");
+var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
