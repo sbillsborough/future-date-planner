@@ -5,7 +5,15 @@
 // onclick/active/current state add past, present, future css class
 // popup message on save, hidden class that temporarily removes when save button is pressed (set interval??)
 
+// Global Variables
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 
-var currentHour = moment().hour();
+var currentHour = 10;
+var momentHour = moment().hour();
+
+console.log(currentHour);
+console.log(momentHour);
+momentHourFormatted = moment().format("HA");
+console.log(momentHourFormatted);
+// $('10').each(function)
