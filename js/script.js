@@ -9,11 +9,29 @@
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 
-var currentHour = 10;
-var momentHour = moment().hour();
+var currentHour = moment().hour();
 
-console.log(currentHour);
-console.log(momentHour);
-momentHourFormatted = moment().format("HA");
-console.log(momentHourFormatted);
-// $('10').each(function)
+var rows = $("textarea");
+
+Array.from(rows).forEach((row) => {
+  var rowIdString = row.id,
+    rowHour;
+  if (rowIdString) {
+    rowHour = parseInt(rowIdString);
+  }
+  if (rowHour) {
+    if (currentHour === rowHour) {
+      setColor(row, "red");
+    } else if (currentHour < rowHour && currentHour > rowHour - 6) {
+      setColor(row, "green");
+    } else if (currentHour > rowHour && currentHour < rowHour + 6) {
+      setColor(row, "lightgrey");
+    } else {
+      setColor(row, "white");
+    }
+  }
+});
+
+function setColor(element, color) {
+  element.style.backgroundColor = color;
+}
