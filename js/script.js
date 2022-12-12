@@ -38,8 +38,65 @@ function setColor(element, color) {
   element.style.backgroundColor = color;
 }
 
-// add text area content to local storage
+var saveBtn9 = $("#save-9");
 
-$("button").click(function () {
-  console.log("test");
+saveBtn9.on("click", function (event) {
+  var store = $("#9").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn10 = $("#save-10");
+
+saveBtn10.on("click", function (event) {
+  var store = $("#10").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn11 = $("#save-11");
+
+saveBtn11.on("click", function (event) {
+  var store = $("#11").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn12 = $("#save-12");
+
+saveBtn12.on("click", function (event) {
+  var store = $("#12").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn13 = $("#save-13");
+
+saveBtn13.on("click", function (event) {
+  var store = $("#13").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn14 = $("#save-14");
+
+saveBtn14.on("click", function (event) {
+  var store = $("#14").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn15 = $("#save-15");
+
+saveBtn15.on("click", function (event) {
+  var store = $("#15").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn16 = $("#save-16");
+
+saveBtn16.on("click", function (event) {
+  var store = $("#16").val();
+  localStorage.setItem("todo", store);
+});
+
+var saveBtn17 = $("#save-17");
+
+saveBtn17.on("click", function (event) {
+  var store = $("#17").val();
+  localStorage.setItem("todo", store);
 });
