@@ -35,7 +35,7 @@ Array.from(rows).forEach((row) => {
 });
 
 function setColor(element, color) {
-  element.style.backgroundColor = color;
+  element.style.background = color;
 }
 
 var saveBtn9 = $("#save-9");
