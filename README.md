@@ -15,7 +15,7 @@
 
 ## General info
 
-Made to practise functions, looping and adding JavaScript to the page.
+Made with MomentJS to fetch current time and to practise setting and retreiving items from local storage.
 
 ## Screenshots
 
@@ -27,6 +27,7 @@ Made to practise functions, looping and adding JavaScript to the page.
 - CSS
 - JavaScript
 - jQuery
+- MomentJS
 
 ## Setup
 
