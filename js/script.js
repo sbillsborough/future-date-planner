@@ -1,18 +1,10 @@
-// current day displayed
-// table or rows that have the hour, text area and save button
-// save button links to corresponding text area
-// saves to local storage
-// onclick/active/current state add past, present, future css class
-// popup message on save, hidden class that temporarily removes when save button is pressed (set interval??)
-
-// Global Variables
+// MomentJS times
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 
 var currentHour = moment().hour();
 
-// var currentHour = 10;
-
+// Sets hourly sections based on past, present, future
 var rows = $("textarea");
 
 Array.from(rows).forEach((row) => {
@@ -38,6 +30,8 @@ function setColor(element, color) {
   element.style.background = color;
 }
 
+// series of functions for ever hour to set, save and retrieve data from local storage plus persist on page load
+
 var store = [];
 
 var saveBtn9 = $("#save-9");
@@ -46,6 +40,7 @@ saveBtn9.on("click", function (event) {
   var inputText = $("#9").val();
   store.push(inputText);
   localStorage.setItem("9am", inputText);
+  unhide();
 });
 
 function getNineAm() {
@@ -62,6 +57,7 @@ saveBtn10.on("click", function (event) {
   var inputText10 = $("#10").val();
   store.push(inputText10);
   localStorage.setItem("10am", inputText10);
+  unhide();
 });
 
 function getTenAm() {
@@ -78,6 +74,7 @@ saveBtn11.on("click", function (event) {
   var inputText11 = $("#11").val();
   store.push(inputText11);
   localStorage.setItem("11am", inputText11);
+  unhide();
 });
 
 function getElevenAm() {
@@ -94,6 +91,7 @@ saveBtn12.on("click", function (event) {
   var inputText12 = $("#12").val();
   store.push(inputText12);
   localStorage.setItem("12pm", inputText12);
+  unhide();
 });
 
 function getTwelvePm() {
@@ -110,6 +108,7 @@ saveBtn13.on("click", function (event) {
   var inputText13 = $("#13").val();
   store.push(inputText13);
   localStorage.setItem("1pm", inputText13);
+  unhide();
 });
 
 function getOnePm() {
@@ -126,6 +125,7 @@ saveBtn14.on("click", function (event) {
   var inputText14 = $("#14").val();
   store.push(inputText14);
   localStorage.setItem("2pm", inputText14);
+  unhide();
 });
 
 function getTwoPm() {
@@ -142,6 +142,7 @@ saveBtn15.on("click", function (event) {
   var inputText15 = $("#15").val();
   store.push(inputText15);
   localStorage.setItem("3pm", inputText15);
+  unhide();
 });
 
 function getThreePm() {
@@ -158,6 +159,7 @@ saveBtn16.on("click", function (event) {
   var inputText16 = $("#16").val();
   store.push(inputText16);
   localStorage.setItem("4pm", inputText16);
+  unhide();
 });
 
 function getFourPm() {
@@ -174,6 +176,7 @@ saveBtn17.on("click", function (event) {
   var inputText17 = $("#17").val();
   store.push(inputText17);
   localStorage.setItem("5pm", inputText17);
+  unhide();
 });
 
 function getFivePm() {
@@ -183,3 +186,11 @@ function getFivePm() {
 }
 
 window.onload = getFivePm();
+
+// unhide save message for 1.2 seoonds
+function unhide() {
+  $(".hidden").show();
+  setTimeout(function () {
+    $("h6").hide();
+  }, 1200);
+}
