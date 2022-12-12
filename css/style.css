@@ -18,6 +18,12 @@ h6 {
   text-align: center;
 }
 
+button {
+  border: none;
+  background: #06aed5;
+  color: white;
+}
+
 .hidden {
   display: none;
 }
@@ -76,9 +82,9 @@ h6 {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  text-align: center;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  color: black;
 }
