@@ -34,6 +34,8 @@ Array.from(rows).forEach((row) => {
   }
 });
 
+var store = [];
+
 function setColor(element, color) {
   element.style.background = color;
 }
@@ -41,62 +43,71 @@ function setColor(element, color) {
 var saveBtn9 = $("#save-9");
 
 saveBtn9.on("click", function (event) {
-  var store = $("#9").val();
-  localStorage.setItem("todo", store);
+  var inputText = $("#9").val();
+  store.push(inputText);
+  localStorage.setItem("9am", inputText);
 });
 
 var saveBtn10 = $("#save-10");
 
 saveBtn10.on("click", function (event) {
-  var store = $("#10").val();
-  localStorage.setItem("todo", store);
+  var inputText10 = $("#10").val();
+  store.push(inputText10);
+  localStorage.setItem("10am", inputText10);
 });
 
 var saveBtn11 = $("#save-11");
 
 saveBtn11.on("click", function (event) {
-  var store = $("#11").val();
-  localStorage.setItem("todo", store);
+  var inputText10 = $("#11").val();
+  store.push(inputText11);
+  localStorage.setItem("11am", inputText11);
 });
 
 var saveBtn12 = $("#save-12");
 
-saveBtn12.on("click", function (event) {
-  var store = $("#12").val();
-  localStorage.setItem("todo", store);
+saveBtn11.on("click", function (event) {
+  var inputText12 = $("#12").val();
+  store.push(inputText12);
+  localStorage.setItem("12pm", inputText12);
 });
 
 var saveBtn13 = $("#save-13");
 
 saveBtn13.on("click", function (event) {
-  var store = $("#13").val();
-  localStorage.setItem("todo", store);
+  var inputText13 = $("#13").val();
+  store.push(inputText13);
+  localStorage.setItem("1pm", inputText13);
 });
 
 var saveBtn14 = $("#save-14");
 
 saveBtn14.on("click", function (event) {
-  var store = $("#14").val();
-  localStorage.setItem("todo", store);
+  var inputText14 = $("#14").val();
+  store.push(inputText14);
+  localStorage.setItem("2pm", inputText14);
 });
 
 var saveBtn15 = $("#save-15");
 
 saveBtn15.on("click", function (event) {
-  var store = $("#15").val();
-  localStorage.setItem("todo", store);
+  var inputText15 = $("#15").val();
+  store.push(inputText15);
+  localStorage.setItem("3pm", inputText15);
 });
 
 var saveBtn16 = $("#save-16");
 
 saveBtn16.on("click", function (event) {
-  var store = $("#16").val();
-  localStorage.setItem("todo", store);
+  var inputText16 = $("#16").val();
+  store.push(inputText16);
+  localStorage.setItem("4pm", inputText16);
 });
 
 var saveBtn17 = $("#save-17");
 
 saveBtn17.on("click", function (event) {
-  var store = $("#17").val();
-  localStorage.setItem("todo", store);
+  var inputText17 = $("#17").val();
+  store.push(inputText17);
+  localStorage.setItem("5pm", inputText17);
 });
