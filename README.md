@@ -15,7 +15,7 @@
 
 ## General info
 
-Made with MomentJS to fetch current time and to practise setting and retreiving items from local storage.
+Made with MomentJS to fetch current time and to practise jQuery plus setting and retreiving items from local storage.
 
 ## Screenshots
 
@@ -34,6 +34,7 @@ Made with MomentJS to fetch current time and to practise setting and retreiving 
 - Open the index.html in any modern browser
 - Type into the text box
 - Click save icon to save data to local storage
+- Popup message that confirms a task has been saved to local storage.
 
 ## Live Application
 
