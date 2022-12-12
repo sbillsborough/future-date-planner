@@ -11,6 +11,8 @@ $("#currentDay").text(currentDay);
 
 var currentHour = moment().hour();
 
+// var currentHour = 10;
+
 var rows = $("textarea");
 
 Array.from(rows).forEach((row) => {
@@ -35,3 +37,9 @@ Array.from(rows).forEach((row) => {
 function setColor(element, color) {
   element.style.backgroundColor = color;
 }
+
+// add text area content to local storage
+
+$("button").click(function () {
+  console.log("test");
+});
