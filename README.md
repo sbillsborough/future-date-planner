@@ -36,7 +36,7 @@ Made to practise functions, looping and adding JavaScript to the page.
 
 ## Live Application
 
-https://sbillsborough.github.io/random-password-generator/
+https://sbillsborough.github.io/future-date-planner/
 
 ## Features
 
