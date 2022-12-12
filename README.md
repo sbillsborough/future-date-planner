@@ -36,7 +36,7 @@ Made to practise functions, looping and adding JavaScript to the page.
 
 ## Live Application
 
-https://sbillsborough.github.io/future-date-planner/
+https://sbillsborough.github.io/work-day-scheduler/
 
 ## Features
 
